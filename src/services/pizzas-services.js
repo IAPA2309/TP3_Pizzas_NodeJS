@@ -10,7 +10,7 @@ export default class PizzaService {
     try {
       let pool = await sql.connect(config);
       let result = await pool.request().query("SELECT * FROM Pizzas");
-      returnEntity = result.recordsets;
+      returnEntity = result.recordsets[0];
     } catch (error) {
       console.log(error);
     }

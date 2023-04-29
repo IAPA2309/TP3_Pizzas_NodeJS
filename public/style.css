@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white-1: #f1f5f9;
+    --black-1: #070a13;
+    --gradient-blue: radial-gradient(61.04% 89.69% at 100% 100%, rgba(200, 250, 255, 0.08) 0%, rgba(28, 210, 229, 0.08) 40.63%, rgba(28, 210, 229, 0) 100%),
+        radial-gradient(43.78% 64.34% at 60.31% 100%, rgba(23, 74, 228, 0.08) 0%, rgba(23, 74, 228, 0) 100%),
+        linear-gradient(180deg, rgba(23, 74, 228, 0) 29.44%, rgba(23, 74, 228, 0.06) 100%),
+        linear-gradient(90deg, #F3F3F7 0%, #EBF0F9 100%);
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('/fonts/SF-PRO-DISPLAY-REGULAR.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('/fonts/SF-PRO-DISPLAY-LIGHT.OTF') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('/fonts/SF-PRO-DISPLAY-BOLD.OTF') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'SF Pro';
+    color: var(--black-1);
+    background: var(--gradient-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 48px;
+    letter-spacing: .011em;
+    margin: 50px;
+}
+
+li {
+    font-size: 21px;
+    letter-spacing: .011em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+input {
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+    display: inline-block;
+    background-color: rgb(214, 214, 214);
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+input:focus {
+    outline: 2px solid #0071e3;
+}
+
+.search{
+    margin-bottom: 50px;
+}
+
+.container{
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 6px;
+    background: #0071e3;
+    font-size: 18px;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #f1f5f9;
+}
+
+.btn:hover {
+    box-shadow: 7px 5px 56px -14px #0071e3;
+    transform: scale(1.02);
+}
+
+.btn:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #0071e3;
+}
